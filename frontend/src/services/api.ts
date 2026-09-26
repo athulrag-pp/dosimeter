@@ -3,8 +3,9 @@ import {
   CalibrationInfo, AlertItem, RiskLevel
 } from '../types';
 
+const isLocalhost = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 const hostname = typeof window !== 'undefined' ? window.location.hostname : 'localhost';
-const API_BASE = `http://${hostname}:8000/api`;
+const API_BASE = isLocalhost ? `http://${hostname}:8000/api` : `/api`;
 
 // Fallback Mock State for Seamless Offline/Client-Only Demo Mode
 let mockReadings: SensorReading[] = [
