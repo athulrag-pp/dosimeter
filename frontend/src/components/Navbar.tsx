@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { BrandLogo } from './BrandLogo';
 import {
   ShieldAlert, Camera, LayoutDashboard, History, BarChart3,
   Watch, Sliders, Bell, User, Settings, Info, Menu, X, PlayCircle
@@ -57,9 +58,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onLaunchDemo }) => {
         <div className="flex items-center justify-between h-16">
           {/* Brand Logo */}
           <Link to="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white shadow-md group-hover:scale-105 transition-transform">
-              <ShieldAlert size={22} className="text-emerald-300" />
-            </div>
+            <BrandLogo size={42} />
             <div>
               <span className="text-xl font-black tracking-tight text-white flex items-center gap-1">
                 H₂S DoseVision <span className="text-xs px-1.5 py-0.5 rounded-md bg-brand-500/30 text-brand-300 border border-brand-500/40">AI</span>

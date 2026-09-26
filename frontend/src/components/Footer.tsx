@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldAlert, AlertTriangle, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { BrandLogo } from './BrandLogo';
 
 export const Footer: React.FC = () => {
   return (
@@ -26,7 +27,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pt-4">
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-white font-bold text-base">
-              <ShieldAlert size={20} className="text-brand-500" />
+              <BrandLogo size={28} />
               <span>H₂S DoseVision Monitoring</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
