@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+venv/
+backend/venv/
+frontend/node_modules/
+
+# Production build output
+dist/
+frontend/dist/
+
+# SQLite Database & data files (temporary/local)
+data/*.db
+data/*.sqlite
+*.db
+*.sqlite3
+
+# Logs & temp
+*.log
+.DS_Store
+.vscode/
+.idea/
+*.tmp
+
+# Environment variables
+.env
+.env.local
