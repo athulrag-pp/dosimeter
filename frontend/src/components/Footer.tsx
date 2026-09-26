@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-3">
             <div className="flex items-center gap-2 text-white font-bold text-base">
               <ShieldAlert size={20} className="text-brand-500" />
-              <span>H2Safe Monitoring</span>
+              <span>H₂S DoseVision Monitoring</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
               Software/computer-vision framework for wearable passive H₂S exposure wristbands utilizing copper-based colorimetry and CIE Lab Delta E calibration.
@@ -66,7 +66,7 @@ export const Footer: React.FC = () => {
 
         {/* Bottom copyright line */}
         <div className="pt-6 border-t border-slate-800/60 text-center text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p>© 2026 H2Safe System — Smart India Hackathon Research Prototype.</p>
+          <p>© 2026 H₂S DoseVision System — Smart India Hackathon Research Prototype.</p>
           <p className="text-[11px] text-slate-400">Built with React, TypeScript, OpenCV, FastAPI & scikit-learn</p>
         </div>
 

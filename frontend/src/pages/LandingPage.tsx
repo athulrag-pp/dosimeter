@@ -85,7 +85,7 @@ export const LandingPage: React.FC = () => {
                 <div className="flex items-center justify-between border-b border-slate-700 pb-4">
                   <div className="flex items-center gap-2">
                     <Watch size={20} className="text-brand-400" />
-                    <span className="font-bold text-sm text-white">H2Safe Sensor Wristband</span>
+                    <span className="font-bold text-sm text-white">H₂S DoseVision Sensor Wristband</span>
                   </div>
                   <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-semibold">
                     Cartridge Active

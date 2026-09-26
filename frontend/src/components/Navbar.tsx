@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onLaunchDemo }) => {
         <div className="max-w-7xl mx-auto w-full flex items-center justify-between">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-            <span className="font-semibold text-slate-200">H2Safe v1.0 Prototype</span>
+            <span className="font-semibold text-slate-200">H₂S DoseVision v1.0 Prototype</span>
             <span className="hidden sm:inline text-slate-400">• AI-Powered Passive H₂S Exposure Monitoring</span>
           </div>
           <div className="flex items-center gap-3">
@@ -62,7 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onLaunchDemo }) => {
             </div>
             <div>
               <span className="text-xl font-black tracking-tight text-white flex items-center gap-1">
-                H2Safe <span className="text-xs px-1.5 py-0.5 rounded-md bg-brand-500/30 text-brand-300 border border-brand-500/40">AI</span>
+                H₂S DoseVision <span className="text-xs px-1.5 py-0.5 rounded-md bg-brand-500/30 text-brand-300 border border-brand-500/40">AI</span>
               </span>
               <span className="block text-[10px] text-slate-400 font-medium tracking-wider uppercase">Passive Sensor Intelligence</span>
             </div>
