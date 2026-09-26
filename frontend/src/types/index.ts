@@ -1,5 +1,27 @@
 export type RiskLevel = 'SAFE' | 'ATTENTION' | 'HIGH' | 'CRITICAL';
 
+export interface HealthVitals {
+  heart_rate_bpm: number;
+  spo2_percent: number;
+  skin_temp_c: number;
+  respiration_rate: number;
+  steps_count: number;
+  hydration_status: 'HYDRATED' | 'MILD_DEHYDRATION' | 'ATTENTION_REQUIRED';
+  heat_stress_index: 'NORMAL' | 'MODERATE' | 'HIGH_HEAT_STRAIN';
+  fitness_for_duty: 'FIT_FOR_SHIFT' | 'REST_RECOMMENDED' | 'IMMEDIATE_MEDICAL_CHECK';
+}
+
+export interface NfcData {
+  nfc_chip_id: string;
+  worker_id: string;
+  full_name: string;
+  blood_group: string;
+  emergency_contact: string;
+  medical_allergies: string[];
+  medical_clearance: string;
+  shift_start_time: string;
+}
+
 export interface User {
   id: number;
   email: string;
@@ -16,6 +38,8 @@ export interface ColorFeatures {
   saturation: number;
   brightness: number;
   color_variance: number;
+  hex_color?: string;
+  matched_color_state?: string;
 }
 
 export interface ImageQualityCheck {
@@ -47,6 +71,10 @@ export interface SensorReading {
   mean_rgb: [number, number, number];
   mean_lab: [number, number, number];
   processed_image_b64?: string;
+  hex_color?: string;
+  matched_color_state?: string;
+  health_vitals?: HealthVitals;
+  nfc_data?: NfcData;
 }
 
 export interface DashboardData {
@@ -63,6 +91,8 @@ export interface DashboardData {
   exposure_today_ppm_hr: number;
   exposure_7d_ppm_hr: number;
   exposure_30d_ppm_hr: number;
+  latest_vitals?: HealthVitals;
+  latest_nfc?: NfcData;
 }
 
 export interface WristbandData {
@@ -72,6 +102,7 @@ export interface WristbandData {
   status: string;
   current_cartridge_id?: string;
   registered_at: string;
+  nfc_chip_id?: string;
   cartridge?: {
     cartridge_id: string;
     installation_date: string;

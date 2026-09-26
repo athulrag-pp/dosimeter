@@ -8,6 +8,7 @@ import { fetchDashboard, fetchReadings } from '../services/api';
 import { DashboardData, SensorReading } from '../types';
 import { RiskBadge } from '../components/RiskBadge';
 import { DemoDataTag } from '../components/DemoDataTag';
+import { HealthVitalsCard } from '../components/HealthVitalsCard';
 
 export const DashboardPage: React.FC = () => {
   const [data, setData] = useState<DashboardData | null>(null);
@@ -214,6 +215,9 @@ export const DashboardPage: React.FC = () => {
         </div>
 
       </div>
+
+      {/* Worker Health Telemetry Card */}
+      <HealthVitalsCard vitals={data.latest_vitals} />
 
       {/* Recent Scans Table & Quick Navigation */}
       <div className="bg-white rounded-3xl p-6 border border-slate-200 shadow-sm space-y-4">
